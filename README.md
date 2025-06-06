@@ -110,7 +110,7 @@
 - [ ] Git 브랜치 전략 수립 (main, develop, feature/*)  
 - [ ] CI/CD 기초 설정 (GitHub Actions + Firebase Hosting or AWS CodeDeploy)
 
-### 4. 🧪 MVP 개발 단계 (2주차)
+### 4. 🧪 개발 단계 (2주차)
 
 **Front-end**
 - [ ] 로그인/회원가입 (Google 소셜 로그인 포함)  
