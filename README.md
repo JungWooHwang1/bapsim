@@ -139,7 +139,24 @@
 
 ---
 
+## ⚠️ 예상되는 문제점과 대응 방안
 
+1. 📱 React Native와 Firebase의 호환 이슈
+- 문제 가능성: Firebase의 일부 기능(특히 푸시 알림, 인증)은 React Native에서 native module 설정이 필요함.
+  ㄴ native module 사용 이유
+    ㄴ iOS와 Android에서 동일한 기능을 구현
+    ㄴ 네이티브 코드로 인한 메모리 감소 ⬇️, 성능 향상 ⬆️
+- 대응 방안:
+    - Expo 사용 시 expo-firebase-* 패키지로 쉽게 구현 가능하지만, 특정 기능은 eject가 필요함.
+      
+2. 🔐 Firebase 인증 및 보안 설정 미숙
+- 문제 가능성: 인증 흐름이 복잡하거나, Firestore/Realtime DB 권한 설정이 미흡할 경우 보안 취약.
+- 대응 방안:
+    - Firebase의 보안 규칙(Security Rules)을 철저히 설계.
+    - ⭐⭐ 민감 데이터는 Firebase 대신 Spring Boot + DB에서 처리하고 토큰만 연동.
+    - ⭐ 인증 관련 흐름 (가입 → 토큰 발급 → 세션 관리) 미리 플로우차트로 정리해 둘 것.
+
+---
 ## ✨ 기여 방법
 - 저꾸꾸저꾸로 참여
 
