@@ -52,14 +52,20 @@
   - 기존 React/Next.js 경험 살려 개발 가능
   -  UI/UX도 유연하고 푸시, 위치 등 기능 확장 쉬움 (외부라이브러리 npm)
      
-### 백엔드
-- `Spring Boot` (Java or Kotlin)
-  - 안정성과 확장성 확보
-  - API, 인증, DB 처리에 최적화
-
-### 인증/실시간/알림
-- `Firebase`
-  - OAuth 로그인, 실시간 DB, 푸시 알림 등 지원
+### 백엔드 & Infrastructure
+   - `Firebase`
+     - Platform: Google의 BaaS(Backend as a Service) 플랫폼을 메인 백엔드로 사용.
+     - Core Roles:
+       - Authentication: 이메일/비밀번호 가입, 소셜 로그인(Google, Apple 등)을 포함한 모든
+         사용자 인증을 처리.
+       - Database: Firestore(NoSQL DB)를 사용하여 앱의 모든 데이터(사용자 정보, 게시물,
+         '밥심' 데이터 등)를 저장하고 관리.
+       - File Storage: Cloud Storage를 사용하여 사용자 프로필 이미지 등 미디어 파일 저장.
+       - Push Notifications: Firebase Cloud Messaging(FCM)을 통해 사용자에게 푸시 알림 전송.
+       - Serverless Logic: Cloud Functions를 사용하여 특정 이벤트(예: 새 사용자 가입, 신고
+         접수)에 반응하는 간단한 서버 사이드 로직 처리.
+       - Real-time Sync: Firestore의 실시간 동기화 기능을 활용하여 '혼밥메이트' 매칭, 채팅 등
+         실시간 기능 구현.
 
 ### 배포/인프라 <-이거는 생각좀 해봐야함
 - `AWS` (EC2, RDS, S3) 또는 `Firebase Hosting`
