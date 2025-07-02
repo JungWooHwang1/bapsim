@@ -46,6 +46,8 @@
 
 ## 🛠️ 기술 스택
 
+### 사용한 외부 라이브러리 정리
+
 ### 프론트엔드
 - `React Native` + `TypeScript`
   - 크로스플랫폼 대응 (iOS/Android)
