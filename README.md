@@ -1,4 +1,4 @@
-# Oneul
+# Bapsim
 소규모 단위 프로젝트
 
 
@@ -113,7 +113,6 @@
 
 - [ ] 프로젝트 폴더 구조 설계 (Front: React Native + TypeScript / Back: Firebase)  
 - [ ] React Native 환경 구성 (Expo or CLI) 및 TypeScript 설정  
-- [ ] Spring Boot 프로젝트 초기 세팅 (Java 또는 Kotlin 선택)  
 - [ ] Firebase 연동 준비 (OAuth, FCM 등)  
 - [ ] Git 브랜치 전략 수립 (main, develop, feature/*)  
 - [ ] CI/CD 기초 설정 (GitHub Actions + Firebase Hosting or AWS CodeDeploy)
